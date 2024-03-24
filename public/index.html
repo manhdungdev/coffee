@@ -1,78 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Coffee style</title>
-    <link rel="stylesheet" href="./output.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="./output.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="root">
-        <div class="container max-w-screen-2xl text-base mx-auto bg-slate-200">
-            <!-- Header -->
-            <header class="  nav w-7/12 mx-auto flex justify-between items-center py-6">
-                <a href="#!" class="text-xl font-semibold text-black">CofeeStyle.</a>
-                <nav>
-                    <ul class="flex">
-                        <li class="group">
-                            <a href="#!"
-                                class=" group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold  "><span
-                                    class="nav__item-infor">Home</span></a>
-                        </li>
-                        <li class="group">
-                            <a href="#!"
-                                class=" group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold  "><span
-                                    class="nav__item-infor">Our Products</span></a>
-                        </li>
-                        <li class="group">
-                            <a href="#!"
-                                class=" group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold  "><span
-                                    class="nav__item-infor">Blog</span></a>
-                        </li>
-                        <li class="group">
-                            <a href="#!"
-                                class=" group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold  "><span
-                                    class="nav__item-infor">About</span></a>
-                        </li>
-                        <li class="group">
-                            <a href="#!"
-                                class=" group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold  "><span
-                                    class="nav__item-infor">Contact</span></a>
-                        </li>
-                        <li class="group">
-                            <a href="#!"
-                                class=" group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold  "><span
-                                    class="nav__item-infor">StyleGuide</span></a>
-                        </li>
-                    </ul>
-                </nav>
+      <div class="container max-w-screen-2xl text-base mx-auto bg-slate-200">
+        <!-- Header -->
+        <header class="relative nav w-full sm:w-10/12 mx-auto flex justify-between items-center p-6">
+          <a
+            href="#!"
+            class="text-xl font-semibold text-black"
+            >CofeeStyle.</a
+          >
+          <nav
+            id="nav"
+            class="hidden lg:block "
+          >
+            <ul class="lg:flex">
+              <li class="group nav__item--active">
+                <a
+                  href="#!"
+                  class="block group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold"
+                  ><span class="nav__item-infor">Home</span></a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#!"
+                  class="block group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold"
+                  ><span class="nav__item-infor">Our Products</span></a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#!"
+                  class="block group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold"
+                  ><span class="nav__item-infor">Blog</span></a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#!"
+                  class="block group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold"
+                  ><span class="nav__item-infor">About</span></a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#!"
+                  class="block group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold"
+                  ><span class="nav__item-infor">Contact</span></a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#!"
+                  class="block group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold"
+                  ><span class="nav__item-infor">StyleGuide</span></a
+                >
+              </li>
+            </ul>
+          </nav>
 
-                <a href="#!">
-                    <div class="  flex justify-center gap-2 items-center">
-                        <img src="../assets/icon/cart.svg" class="ct-icon" alt="">
-                        <span class="text-sm">CART</span>
-                        <span class="ct-badge  top-0 right-0 bg-slate-500 text-white">10</span>
-                    </div>
-                </a>
-            </header>
+          <div class="flex items-center justify-center gap-6 sm:gap-8">
+            <a href="#!">
+              <div class="flex justify-center gap-2 items-center">
+                <img
+                  src="./assets/icon/cart.svg"
+                  class="ct-icon"
+                  alt=""
+                />
+                <span class="text-sm">CART</span>
+                <span class="ct-badge top-0 right-0 bg-slate-500 text-white">10</span>
+              </div>
+            </a>
 
-            <!-- Main -->
-            <main>
-                <div class="slider">slider</div>
-                <div class="story">story</div>
-                <div class="mugs">mugs</div>
-                <div class="products">products</div>
-                <div class="magazines">magazines</div>
-                <div class="life-styles">life</div>
-                <div class="subcribe">subcribe</div>
-            </main>
+            <button
+              id="header-btn"
+              class="block lg:hidden"
+            >
+              <img
+                class="ct-icon"
+                src="./assets/icon/bar.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </header>
 
-            <!-- Footer -->
-            <footer></footer>
-        </div>
+        <!-- Main -->
+        <main>
+          <div class="slider">slider</div>
+          <div class="story">story</div>
+          <div class="mugs">mugs</div>
+          <div class="products">products</div>
+          <div class="magazines">magazines</div>
+          <div class="life-styles">life</div>
+          <div class="subcribe">subcribe</div>
+        </main>
+
+        <!-- Footer -->
+        <footer></footer>
+      </div>
     </div>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>

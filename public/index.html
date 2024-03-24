@@ -2,35 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee style</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./output.css" />
 </head>
 
 <body>
     <div id="root">
-        <div class="container">
+        <div class="container max-w-screen-2xl text-base mx-auto bg-slate-200">
             <!-- Header -->
-            <header>
+            <header class="  nav w-7/12 mx-auto flex justify-between items-center py-6">
+                <a href="#!" class="text-xl font-semibold text-black">CofeeStyle.</a>
+                <nav>
+                    <ul class="flex">
+                        <li class="group">
+                            <a href="#!"
+                                class=" group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold  "><span
+                                    class="nav__item-infor">Home</span></a>
+                        </li>
+                        <li class="group">
+                            <a href="#!"
+                                class=" group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold  "><span
+                                    class="nav__item-infor">Our Products</span></a>
+                        </li>
+                        <li class="group">
+                            <a href="#!"
+                                class=" group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold  "><span
+                                    class="nav__item-infor">Blog</span></a>
+                        </li>
+                        <li class="group">
+                            <a href="#!"
+                                class=" group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold  "><span
+                                    class="nav__item-infor">About</span></a>
+                        </li>
+                        <li class="group">
+                            <a href="#!"
+                                class=" group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold  "><span
+                                    class="nav__item-infor">Contact</span></a>
+                        </li>
+                        <li class="group">
+                            <a href="#!"
+                                class=" group py-2 px-4 text-sm uppercase text-gray-500 group-hover:text-gray-800 font-semibold  "><span
+                                    class="nav__item-infor">StyleGuide</span></a>
+                        </li>
+                    </ul>
+                </nav>
 
+                <a href="#!">
+                    <div class="  flex justify-center gap-2 items-center">
+                        <img src="../assets/icon/cart.svg" class="ct-icon" alt="">
+                        <span class="text-sm">CART</span>
+                        <span class="ct-badge  top-0 right-0 bg-slate-500 text-white">10</span>
+                    </div>
+                </a>
             </header>
 
             <!-- Main -->
             <main>
-                <div class="slider"></div>
-                <div class="story"></div>
-                <div class="mugs"></div>
-                <div class="products"></div>
-                <div class="magazines"></div>
-                <div class="life-styles"></div>
-                <div class="subcribe"></div>
+                <div class="slider">slider</div>
+                <div class="story">story</div>
+                <div class="mugs">mugs</div>
+                <div class="products">products</div>
+                <div class="magazines">magazines</div>
+                <div class="life-styles">life</div>
+                <div class="subcribe">subcribe</div>
             </main>
 
             <!-- Footer -->
-            <footer>
-
-            </footer>
+            <footer></footer>
         </div>
     </div>
 </body>

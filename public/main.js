@@ -14,3 +14,9 @@ window.addEventListener("click", (e) => {
     }
   }
 });
+
+const btn = $("#btn");
+const box = $(".box");
+btn.onclick = () => {
+  box.classList.toggle("abcd");
+};

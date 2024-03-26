@@ -1,13 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+a,
+input,
+textarea,
+button,
+select,
+img,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+img,
+svg,
+input {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
 
 .nav__item-infor {
   @apply relative lg:after:absolute lg:after:-bottom-1 lg:after:left-0 lg:after:bg-light-coffee lg:after:h-0.5 lg:after:w-0 group-hover:lg:after:w-full lg:after:transition-all lg:after:ease-in-out lg:after:duration-250;
 }
 
 .nav-expand {
-  @apply absolute top-16 left-0 bg-white w-full rounded-lg text-center border-solid border-4 animate-dropDown;
+  @apply absolute top-16 left-0 bg-white w-full rounded-lg text-center animate-dropDown;
 }
 
 .ct-icon {

@@ -18,6 +18,12 @@ module.exports = {
       animation: {
         dropDown: "dropDown 0.2s linear",
       },
+      fontFamily: {
+        karla: ["Karla", 'sans-serif'],
+      },
+      backgroundImage: {
+        'slider': "linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('./assets/img/slider.jpg')",
+      }
     },
   },
   plugins: [],

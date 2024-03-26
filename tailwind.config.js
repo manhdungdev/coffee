@@ -20,9 +20,14 @@ module.exports = {
           "0%": { translate: "0 -50%" },
           "100%": { translate: "0" },
         },
+        slideUp: {
+          "0%": { translate: "0 8px", opacity: 0 },
+          "100%": { translate: "0", opacity: 1 },
+        },
       },
       animation: {
         dropDown: "dropDown 0.2s linear",
+        slideUp: "slideUp 0.3s linear",
       },
       fontFamily: {
         karla: ["Karla", "sans-serif"],

@@ -77,8 +77,16 @@ button {
   @apply text-gray-800;
 }
 
+.btn {
+  @apply uppercase font-bold text-xs tracking-[2px]  px-6 bg-white;
+}
+
+button.btn {
+  @apply py-4 text-black hover:opacity-95;
+}
+
 .heading {
-  @apply flex items-center justify-center gap-4 mt-[100px] tracking-[2px] text-xs leading-[18px] text-[#9b9b9b] text-center uppercase font-bold;
+  @apply flex items-center justify-center gap-4 my-[75px] md:my-[100px] tracking-[2px] text-xs leading-[18px] text-[#9b9b9b] text-center uppercase font-bold;
 }
 
 .heading::after,

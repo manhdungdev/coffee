@@ -4,7 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "light-coffee": "#c89f94",
+        coffee: {
+          100: "#a25f4b33",
+          200: "#be8f81",
+          300: "#c89f94",
+          400: "#a25f4b",
+          500: "#743f2f",
+        },
       },
       transitionDuration: {
         250: "250ms",
@@ -19,11 +25,12 @@ module.exports = {
         dropDown: "dropDown 0.2s linear",
       },
       fontFamily: {
-        karla: ["Karla", 'sans-serif'],
+        karla: ["Karla", "sans-serif"],
       },
       backgroundImage: {
-        'slider': "linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('./assets/img/slider.jpg')",
-      }
+        slider:
+          "linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('./assets/img/slider.jpg')",
+      },
     },
   },
   plugins: [],

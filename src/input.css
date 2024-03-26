@@ -58,7 +58,7 @@ button {
 }
 
 .nav__item-infor {
-  @apply relative lg:after:absolute lg:after:-bottom-1 lg:after:left-0 lg:after:bg-light-coffee lg:after:h-0.5 lg:after:w-0 group-hover:lg:after:w-full lg:after:transition-all lg:after:ease-in-out lg:after:duration-250;
+  @apply relative lg:after:absolute lg:after:-bottom-1 lg:after:left-0 lg:after:bg-coffee-300 lg:after:h-0.5 lg:after:w-0 group-hover:lg:after:w-full lg:after:transition-all lg:after:ease-in-out lg:after:duration-250;
 }
 
 .nav-expand {
@@ -75,4 +75,13 @@ button {
 
 .nav__item--active > a {
   @apply text-gray-800;
+}
+
+.heading {
+  @apply flex items-center justify-center gap-4 mt-[100px] tracking-[2px] text-xs leading-[18px] text-[#9b9b9b] text-center uppercase font-bold;
+}
+
+.heading::after,
+.heading::before {
+  @apply content-[''] h-[1px] w-[30px] bg-[#b3b3b8];
 }

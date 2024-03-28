@@ -949,8 +949,8 @@ video {
   width: 100vw;
 }
 
-.w-\[90\%\]{
-  width: 90%;
+.w-\[80\%\]{
+  width: 80%;
 }
 
 .w-\[95\%\]{
@@ -975,10 +975,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[80\%\]{
-  width: 80%;
 }
 
 .min-w-\[350px\]{
@@ -3270,14 +3266,6 @@ button.btn:hover{
     width: 50%;
   }
 
-  .md\:w-\[90\%\]{
-    width: 90%;
-  }
-
-  .md\:w-\[80\%\]{
-    width: 80%;
-  }
-
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3355,10 +3343,13 @@ button.btn:hover{
   }
 }
 
-@media (prefers-color-scheme: dark){
-  @media (min-width: 1024px){
-    .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
-      paint-order: markers;
-    }
+.dark\:text-white:where(.dark, .dark *){
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .dark\:lg\:hover\:\[paint-order\:markers\]:hover:where(.dark, .dark *){
+    paint-order: markers;
   }
 }
